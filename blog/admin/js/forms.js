@@ -67,12 +67,11 @@ function addGallery()
 document.getElementById('post-input').value+='<div class="galleryContainer" >'+
 	'<ul id="pikame" class="jcarousel-skin-pika">'+
 	'</ul>'+
-'</div>'
+'</div>';
 }
 
 function addCode()
 {
-alert('addingCode');
 document.getElementById('post-input').value+='<pre class="code" >'+
 '</pre>';
 }
@@ -123,9 +122,10 @@ alert('please select a thumbnail for image');
 
 }else{
 document.getElementById('post-submit-form').submit();
+}
+}
 
-
-function insertTextAtCursor(text) {
+/*function insertTextAtCursor(text) {
     var sel, range, html;
     if (window.getSelection) {
         sel = window.getSelection();
@@ -137,6 +137,6 @@ function insertTextAtCursor(text) {
     } else if (document.selection && document.selection.createRange) {
         document.selection.createRange().text = text;
     }
-}
+}*/
 
 

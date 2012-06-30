@@ -8,13 +8,13 @@
 <table class="uiGrid editor lowContrast" cellspacing="0" cellpadding="1">
 <tbody >
 <tr>
-<td class="label grid_2"><label class="lowContrast">Name:</label></td><td class="fieldContainer"><input type="text" id="nameCommentInput" name="name"/></td>
+<td class="label grid_2"><label>Name:</label></td><td class="fieldContainer"><input type="text" id="nameCommentInput" name="name"/></td>
 </tr>
 <tr>
-<td class="label grid_2"><label class="lowContrast">Email:</label>  </td><td class="fieldContainer"> <input type="text" id="emailCommentInput" name ="email"/></td>
+<td class="label grid_2"><label>Email:</label>  </td><td class="fieldContainer"> <input type="text" id="emailCommentInput" name ="email"/></td>
 </tr>
 <tr>
-<td class="label grid_2"><label class="lowContrast">Website: </label></td><td class="fieldContainer"> <input type="text"id="websiteCommentInput" name ="website"/></td>
+<td class="label grid_2"><label>Website: </label></td><td class="fieldContainer"> <input type="text"id="websiteCommentInput" name ="website"/></td>
 </tr>
 <tr>
 <td class="label grid_2"></td><td class="fieldContainer"> <textarea id="contentCommentInput" name="content" rows="3"cols="30"></textarea>

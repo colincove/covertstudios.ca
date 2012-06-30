@@ -1,0 +1,89 @@
+H1 {
+color:#2480c1;
+
+}
+H2 {
+margin-top: 50px;
+}
+H5 {
+margin: 0px;
+font-size:8pt;
+}
+BODY {
+line-height: 200%;
+color:#787878;
+background-color:#ededed;
+
+font-size:12px;
+width: 100%;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.quote{
+font-style:italic;
+margin-left: 40px;
+padding-left: 10px;
+margin-top:50px;
+margin-bottom:50px;
+border-left:#787878 2px solid; 
+}
+.code{
+margin-left: 40px;
+padding-left: 10px;
+margin-top:50px;
+margin-bottom:50px;
+width:100%;
+background-image:url('../images/CodeStrip.jpg');
+background-repeat:repeat-y;
+}
+pre {
+
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+a:link {
+color:#2480c1;
+text-decoration:none;
+}
+a:visited {
+COLOR: #cc66cc;
+}
+a:hover {
+color:#60b2ec;
+}
+a:active {
+COLOR: #66cc66;
+}
+.centeringDiv{
+  background-color:#ff0000;
+}
+.blogPost{
+height: 400px;
+}
+.blogContent{
+float:left;
+}
+.contentGroup{
+margin-bottom: 50px;
+}
+.img_300x165{
+margin-top:20px;
+margin-right:20px;
+margin-bottom:20px;
+}
+.postThumbnail.img_300x165{
+margin-bottom:0px;
+}
+.galleryContainer{
+padding: 15px 20px; overflow:hidden; height: 485px; width: 500px;
+}
+.topicIcon{
+float: left;
+margin-top:20px;
+margin-right:20px;
+}
+.postTitleLink{
+text-decoration:none;
+}

@@ -1344,7 +1344,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     return container.innerHTML;
   }
 
-  function code(opt_whenDone) {
+  function prettyPrint(opt_whenDone) {
     function byTagName(tn) { return document.getElementsByTagName(tn); }
     // fetch a list of nodes to rewrite
     var codeSegments = [byTagName('pre'), byTagName('code'), byTagName('xmp')];
@@ -1367,7 +1367,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     var prettyPrintingJob;
 
     var langExtensionRe = /\blang(?:uage)?-([\w.]+)(?!\S)/;
-    var prettyPrintRe = /\bcode\b/;
+    var prettyPrintRe = /\bprettyprint\b/;
 
     function doWork() {
       var endTime = (window['PR_SHOULD_USE_CONTINUATION'] ?
@@ -1376,7 +1376,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
       for (; k < elements.length && clock['now']() < endTime; k++) {
         var cs = elements[k];
         var className = cs.className;
-        if (className.indexOf('code') >= 0) {
+        if (className.indexOf('prettyprint') >= 0) {
           // If the classes includes a language extensions, use it.
           // Language extensions can be specified like
           //     <pre class="prettyprint lang-cpp">
@@ -1402,7 +1402,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
           for (var p = cs.parentNode; p; p = p.parentNode) {
             if ((p.tagName === 'pre' || p.tagName === 'code' ||
                  p.tagName === 'xmp') &&
-                p.className && p.className.indexOf('code') >= 0) {
+                p.className && p.className.indexOf('prettyprint') >= 0) {
               nested = true;
               break;
             }
@@ -1451,7 +1451,7 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|\\!|\\!=|\\!==|\\#|\\%|\\%=|&|&&|&
     * @param {string} sourceCodeHtml code as html
     * @return {string} code as html, but prettier
     */
-  window['code'] = code;
+  window['prettyPrint'] = prettyPrint;
    /**
     * Contains functions for creating and registering new language handlers.
     * @type {Object}

@@ -32,7 +32,15 @@
 }
 
 /* Put a border around prettyprinted code snippets. */
-pre.code { }
+pre.prettyprint { 
+//margin-left: 40px;
+padding-left: 10px;
+margin-top:50px;
+margin-bottom:50px;
+width:100%;
+background-image:url('../images/CodeStrip.jpg');
+background-repeat:repeat-y;
+}
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */

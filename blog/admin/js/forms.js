@@ -72,8 +72,8 @@ document.getElementById('post-input').value+='<div class="galleryContainer" >'+
 
 function addCode()
 {
-document.getElementById('post-input').value+='<pre class="code" >'+
-'</pre>';
+document.getElementById('post-input').value+="<pre class='prettyprint' >"+
+"</pre>";
 }
 
 // return the value of the radio button that is checked

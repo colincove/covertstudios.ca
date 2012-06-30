@@ -3,7 +3,7 @@
 width: 100px;
 }
 #contentCommentInput{
-width: 300px;
+//width: 300px;
 height: 100px;
 }
 .commentContainer
@@ -15,45 +15,9 @@ margin-top: 30px;
 
 
 }
-.uiGrid {
-border: 0;
-border-collapse: collapse;
-border-spacing: 0;
-}
-#reg_form_box .editor {
-margin: 0 0 7px 0;
-}
-div.large_form {
-padding-left: 0;
-}
-tbody {
-direction: ltr;
-display: table-row-group;
-vertical-align: middle;
-border-color: inherit;
-}
-div {
-display: block;
-}
-tr {
-display: table-row;
-vertical-align: inherit;
-border-color: inherit;
-}
-td, th {
-display: table-cell;
-vertical-align: inherit;
-}
-div.large_form td.label {
-font-size: 13px;
-width: 105px;
-padding-right: 3px;
-}
+
+
 td.label{
 width: 50px;
 height: 50px;
-}
-textarea
-{
-margin-left:111px;
 }

@@ -9,14 +9,28 @@ H5 {
 margin: 0px;
 font-size:8pt;
 }
-BODY {
+.fieldError{
+border-color: #FF0000;
+}
+BODY, table,td, tr , label
+{
 line-height: 200%;
 color:#787878;
 background-color:#ededed;
 
 font-size:12px;
-width: 100%;
 	font-family:Verdana, Geneva, sans-serif;
+}
+td.grid_2{
+max-width: 140px;
+word-wrap: break-word;
+}
+tbody {
+vertical-align: inherit;
+}
+.lowContrast
+{
+color: #cacaca;
 }
 .quote{
 font-style:italic;

@@ -6,7 +6,12 @@
 <?php
 if(empty($_COOKIE["AdminSession"])==false)
 {
-echo "<img src='admin/image/x.png' /><img src='admin/image/hide.png' />";
+
+echo '<img src="admin/image/x.png" onclick="deletePost(\''.$row['uid'].'\')" /><img src="admin/image/hide.png" onclick="hidePost(\''.$row['uid'].'\',\''.$row['visible'].'\')" />';
+if($row['visible']=='0')
+{
+echo " CURENTLY HIDDEN";
+}
 }
  ?>
 <h5><?php echo formatDate($row['date']) ?></h5>

@@ -9,6 +9,7 @@
 <link href="css/prettify.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/prettify.js"></script>
 <script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
+<script type="text/javascript" src="admin/js/adminFunctions.js" ></script>
 <script type="text/javascript">
 Shadowbox.init({
     handleOversize: "drag",

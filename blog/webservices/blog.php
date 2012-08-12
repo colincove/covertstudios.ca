@@ -6,7 +6,13 @@ $db_selected=mysql_select_db ('colincoveblog', $con);
 //$query =  sprintf("CREATE VIEW playthroughs AS ".
 //"SELECT levelPlaythroughs.date, levelPlaythroughs.score, levelPlaythroughs.loadOut, levelPlaythroughs.user FROM level".$level."Playthroughs LEFT JOIN levelPlaythroughs ON level".$level."Playthroughs.playthroughId = levelPlaythroughs.uid ORDER BY score DESC");
 //$result = mysql_query($query, $con) or die(mysql_error());
-$query =  sprintf("SELECT uid, title, content, type, date, thumbnail, introduction FROM blogEntry  ORDER BY date DESC LIMIT ".$start.", ".$end);
+$query;
+if(empty($_COOKIE["AdminSession"])==true)
+{
+$query =  sprintf("SELECT uid, title, content, type, date, thumbnail, introduction, visible FROM blogEntry WHERE visible=TRUE ORDER BY date DESC LIMIT ".$start.", ".$end);
+}else{
+$query =  sprintf("SELECT uid, title, content, type, date, thumbnail, introduction, visible FROM blogEntry ORDER BY date DESC LIMIT ".$start.", ".$end);
+}
 $result = mysql_query($query, $con) or die(mysql_error());
 	
 	while ($row = mysql_fetch_assoc($result)) 

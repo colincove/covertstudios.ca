@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css">
@@ -6,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/headerStyle.css">
 <link rel="stylesheet" type="text/css" href="css/grid.css">
 <link rel="stylesheet" type="text/css" href="css/comments.css">
+<link rel="stylesheet" type="text/css" href="css/cssreset.css">
 <link href="css/prettify.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/prettify.js"></script>
 <script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
